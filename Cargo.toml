@@ -1,0 +1,20 @@
+[package]
+name = "mmv"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+clap = { version = "4.4.6", features = ["derive"] }
+fs = "0.0.5"
+regex = "1.9.6"
+tempdir = "0.3.7"
+
+[lib]
+name = "copier"
+path = "src/copier.rs"
+
+[[bin]]
+name = "mmv"
+path = "src/bin/mmv.rs"
